@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="./style.css" rel="stylesheet">
+        <title>Portfolio V1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="icon" type="image/png" href="./android-chrome-512x512.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body>
+      
+
+<nav id="navbar" class="h-12 mb-12 backdrop-blur-[12px]" >
+<div class="flex pt-[2] flex-wrap items-center justify-start">
+  <div class="ml-10 text-3xl text-black hover:text-[#FF5733]" style="margin-right: 20%;margin-right: 30%"><a href="https://github.com/db0x69codes">_DbCodez_</a></div>
+    <ul class="flex font-medium backdrop-blur-sm">
+      <li>
+        <a href="#" class="text-sm pl-20 px-3 text-black rounded hover:text-[#FF5733] mr-5">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="text-sm pl-20 px-3 text-black rounded hover:text-[#FF5733] mr-5">About</a>
+      </li>
+      <li>
+        <a href="#" class="text-sm pl-20 px-3 text-black rounded hover:text-[#FF5733] mr-5">Services</a>
+      </li>
+      <li>
+        <a href="#" class="text-sm pl-20 px-3 text-black rounded hover:text-[#FF5733] mr-20">Contact</a>
+      </li>
+    </ul>
+
+</div>
+</nav>
+<script src="./particles.min.js"></script>
+<canvas class="background"></canvas>
+<script>
+  window.onload= function() {
+     Particles.init({selector:".background"});
+};
+</script>
+<div class="container pt-[5em]" style="border-width: 10%;">
+          <section class="mt-20 mb-12 flex">
+            <div class="ml-28 font-sans w-1/2">
+            <h1 class="ml-28 font-sans text-3xl">Hi!</br></h1>
+            <span class="ml-28 font-sans text-5xl">I am </span><span class="font-sans text-center text-5xl text-[#FF5733]">Debjyoti</span>
+            <h1 class="ml-28 font-sans text-5xl">I am into </h1>
+            <span class="ml-28 font-sans text-5xl" id="typing">
+              <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+              <script>
+
+                var typed = new Typed('#typing', {
+                  strings: ['Web Development', 'DSA','ML'],
+                  typeSpeed: 25,
+                  startDelay: 200,
+                  loop:true
+                });
+                
+              </script>
+            </span>
+            </div>
+            <img src="./code.jpg" class ="ml-20 justify-end" style="width: 15%; border-radius: 50%; border-color:grey; border-width: 2px;align-items: end;"></img>
+          </div>
+          
+        </section>
+      </hr>
+      <section id="contact_me" style="z-index: 1;">
+        <span class="justify-between pl-[15rem] pb-9">
+          <a href="#project" class="border-black border-2"style="text-align: center;padding: 4px;border-radius: 4px;margin: 2px 0;">View My Work</a>
+        </span>
+        <div class="mt-10 ml-[14em] mb-20 flex space-x-4 size-1/4">
+          <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAArJJREFUaEPtmM2rTlEUxn935CsDA0K5ZWBADAwoI8XAQKEoJUlxpRSROfkDkGTgK4Mb5WNAykQGBgxvl2Jwi5LvkZLPCefRPrXvsc+7937Pvue8t/aqd/B21trrefZaZ51n7yGmuQ1Nc/xkAl1XMFcgV6DhDuQWariBjcN9FVgIzAeeN87U3wKrgE/A57rwOgJrgKvAShP4ChgBHvWHIzpqI3AJWGoix4E9wLPqSi4CCr4HzHakPQGcioYTF3ASUJ6qfQU2Fb+n9gMXgfvA5h45HwC7gC9xuLze84AbBmSd801gp4+Aem6BJ90bYBsw5oUV5rAWuFW07bDH/S2wxEfgT1jOf17HgDMR/i7Xo8DpiDUmdY2rhWIIKK/el92AejTG5gKjwJaYIJgsQFMQUP7XRTttjRi3q4E71pSJ4ZC8AmXyn8AR4KIHzUHgLDAjBrXlO2UEyhzXgQPAtwrAOcA1YEefwMuwKSegRBOmpV6arMuBu8CyhuAV3goBJfoB7AdmAueBWQnAt0ogEd7/lmmtAplAzQ4kqcALYEXiLQ5dMwkB6ZHjZu6n4CE5op80ls+SEFgEfDQyQHJAsqAfk/yQDJEcWVycOd4FLJKEgJJ9MMl06NCM1+kpxqRktxsZorjOCCi5ZIHkgWRCiF0ApEJ/W86dEihxSCZILkg2uEzyYm9xVL3teDgQBIRLckEtJflgmy4G1DKSGS4bGAICJ9lw2Rw99f8KcAj41aO/WiVQTiFfv+8zoDWpfKYrnHIw9PJNPoV8wEKft1oBe4yGAvT5ZQLlDoUc6ge6AjqI6BDSy0JfYl/b2M+15ntPwPfqN8Z1K/EEWNcBgZB34DGw3sbmIiBtcw7YUHM/qvi2K6Av+EPgcFWx+q7XY1qgE99MoJNtt5LmCuQKNNyB3EINN7Bx+F9qT38xwLlCgwAAAABJRU5ErkJggg==" class="hover:transition-transform 0.2"/>
+          <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA49JREFUaEPtmFnITVEUx38fGTLPmUoZEzKmyFCUeSohQ8ZIingxFGXIVBQpU8qQhAwPxmR4kEjCi4TwIp5QhoTC/mtfXec759v7nHsc96u7Xu6ts/be67+G/1p7l1HJpayS208JwP+OYCkCpQgU6IHKkELdgEVAc2AjcC8fc7ECaADMAOYAvfIMfgZ0LFYAVYBh1ujxQI2Q7PoI1Cs2AG2BucBsoJWjJB4BXYsBQC1gsjV8YIw6PmyB/lmSdQ0MsCki4+vEMDynqmLek3UEWgIzrbc7OIzeBVwBzkXoqaAfZAGgGjDBeluFWdVh+EOr+9waPzhE/ztQG9DvP0uhHtbT04DGHinyGVgD7ASaAVeBLhHrbpvo9A9+S6MGGuVxtgD4ygVgIfAK6GSNb13BYoFcmhYApYRSQ/Q3DqjuazXwBlhi6PCUXdMPuATUd+wx3TSxY4UCaG+NngWoOOPITzMO7AVWAGpIEjWsExFNK7i3zlaN/CU+KSS6E+2prYsGk8hjC/xO3mJF7wB4Xao+REWoIgCDrNGTbPUnMfyLYaANhvO3BdhjE7AqxoaXgZFh+mEA+hpG2G3orHeMA8JUrwPzTQ94Efh4CFAKxpF1RnmtLwCxgmsmqejwt5YtjgaUND6ctcUfx3jpjgYu+gKYYnMzSatXTqtI3wUOa2qZJmlU1VOCe/4+IqoG1PFGAGMt+iYOl2lOnwfcDNFrB1wD2sR1u9V/CWhiDRUfFtKcLq4WGHF+57ydvhkK3Gz6gIpS/4Oixibj1eySynFgaiEAgmvlUQHpYyKo4noasflw4HQBDJbbdhmwI00APp5U19Ts7hrifPZS77mVJYDVlvt9jHPp/ABqBifQ/EU+NeA6JP+76O58nAUO3fuufpQ2gAXAvhQBaC9NrJGSNgD1gC0pAtC8dDBLAFuB5SkC0AuEXiIyi8B+O/8ED9QdV30kjnwC6roWpJ1CJ43HNL3myyg7RmgkVzpoJvKRG8AQl2LaAHSnHWoP/WrHEHXinKgJqrl1dxkGKB1XuvTSBiDa6wnosq75PWw20ovFdmCxw7iJwJmsAWj219ul0uau4/AxZkg7Yl4kGkboaaR/nTUAUajy/InrYPu9BaC6CV5VdfH3unOnnUKedpdTW2/fh3Ifyr2BRm1cLABkn54NddXUvUEPCO99vFFMAHzsLadTApDIbSkuKkUgRWcm2qoUgURuS3HRLyz1fjE10BfQAAAAAElFTkSuQmCC"/>
+          <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABJNJREFUaEPtmXmoV0UUxz8iQhpWYGpaEq1YBoapiGWQaQtFFFZELkgmUpJLLkWGaZJptBcRpUWouQSSmlFqhEqIqSgIZrm1q1SWmdYfhc0X5ifX+2a7v3ufjwceEHnvznznfM+c+c6c81rQzK1FM/ef0wSaeger3IHzgIHADUB/4MIcuf3A5/bfJ8CPVZAvS6ATMAG4Deha0KHdwMfAi8B3BeeeGF6GwJPAE0DrehfPzJsBzAT+KYpVDwGlyduOFCm6dn68UupB4NMiQEUJzAUeKLJAHWPfAUakzkslcJbN12tTgUuO+wK41ZyvIzGcFAKtgDXA9TGwir+vBW4E/gvhphB4ExhVsXOpcK8CY8sQuB9Y4AB4y8jmIuBq4GHg0lSPcuN+AN4wMrzJ3iGPOXAGAUt9+KEdOAfYB+j/vF1nFlSe1kw7NA3QZVazg8DPwL9Gtc4HOme+HQKeBl7J/O5y4GvHWsK5GDjmIhEi8ALwqIe5a96ZwJXW6Z8883Txichekxq/O8YcBdo4fq/gTC9C4Fwjl98HLqmUs1NPVinaHRwT/wC6AH/lv/kcEeOnAh6cbXbnz3o8jMw5Hvj+CPB6KgEdrgsCYD2BLRUTuMimlg92K9AjhYCckyr4LCptJYg9DjwbmC8xkDCcMFcKTTIH6TkPiBRFO6NcbQzTAdazWze/y4YayZ4fI7AYuNcDsAy4szE8z2C+Cwz3rPFSXhldO7AN6O4BcB6kigkNA97zYK4A7ojtgHJMeu0y3cwLK3Y4D3dT4Em9A+gWI3AA6OhxUtGZ14QEJN2S8OAh/sa8fy7zODnePC1ebmQCQwJB0nNCN36QwAagj8fJ5wGpVGOaHnSzPAt8a86H7osggY9ske7C2BggVxUpFfoqZly2GegVI6DrenTAG71OD1flrQPnb7MDZ3jwJfH3xQjoDtBAnzXQ4grJ6MU5NYCnwKp+CKaQXqK/RJyS1K2u0HFBqcZYH8G8wuzAzhgBff8yn2s5YKnBXcCqikiok/ch0DaAp0ZYA3X0PafVn1Hvp2Z6n6hDoKopa0onNaR+rZOIdlvNMclzzKR+UsGTzEdAWiunaxF5HxhsIt7XSly/DIq6aepabAf2mCfv8kAK6pF2t43kVcCAwIHN+yqyv6US0LhnbHRqcyRv99gflGInXen293qG946E8jPb/I1FPPv9NWCMa0KoNJSUKarZjoNaLA/Zy0TOtsuBSsE+iHimICwp4L2KK9XaDcpJYcRqW6XKutxiirCcv8SWnbcA0m5dcpK5mIKp5i1ST9wcEosYAfkup7K16Erg9gIRdA0N1b7Z8RPNOVR3xGspBDR5tunLTM6gqJ8zrgSJFAIKmuqPoKUScB1qKY4qNBXbao2r3yMtdzagcl7ECKikdXXpGpApQkCT1VpXi91n7RPvhBCBkabunhOLfO17UQKad40trF1/UipD4Ctzj6hoL9SuqYdAjbzaH2qDZK0eAmon6kxNSY16dlwZAsLRPaAtV4e6pW3ipvihB9ku2/nWuSn8t7EyKZTi4CkbU3YHTpmjvoVOE2jqLWj2O/A/O8C9MVHwMgoAAAAASUVORK5CYII="/>
+          <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABRdJREFUaEPtmWWId0UUh5/XLlBR7G78oB9sERMVA7sVW1QUWxTBVgQxEUxsDOzGTkRRVBQDuzCxsbDnkbkye3fuvXN3//9XFvbAwu7cmXPmN3PO75wzO4UJLlMm+P6ZBPB/3+DkDUzEG1gA2AXYDFgCWGScID4G3gXuBa4HPu2jr48LzQycAhwOTNvHSI+5fwLnAccDv5SsKwWwHnBl+Fm0ROkA5nwI7AU81qWrBMA6wOM1Rd8CtwMvAm8Dv3UZavjurS4PrAlsDMxam7cu8ESb7i4AGngdWCwq+Qo4Mvj+NWPccNuy2cLHk6L+at4HEWCjO3UBOCf6vAoNrlWBT4aw+VTlasCzycC5wBFNNtsALAx8lCxcv8Qne4KbC9gzMtoLwMnAj8CJ8TYqdXqAcTFK2gDsB1waVzwHeDKDloOBCxKl3rguquiuAlQOBC7uC+DycAN7x0WnRWrrC8AA/T0Gem7tGcCxyQddZ434923A1vH3K4B9+gKQeWQgZQfg5oLdzxT9VfZYJXD6HHGNrPU88Ejk+Yq1TIjXJXpPCDnm1Pi37uTfyqPABn0BvJ+wj0Ce7ACwEnAjsFTHvDeBHcPpvhzn7RYoecVIEq7/LI7vn7iNmTqrty0GvgHmjMo08ErLxmSJs0IQdrFapcKMq6+f36Jz51haOMW9VPEwYkmbwb+TmY0sEJPQ07WNXA3cHa79KWDGSABbAp52JepfHZAgcrINcGv88FM4IPPEKCkFMF9ggi8y62cBXgUWj9/MFW6yqQTYELgWmDfON4uvEAL514xuA9hAVn7OZOl/P5QCmBv4OmNEDrdGqmQtoH4b9WUG48PJoIF8w7ABGAvfZYxcBewRxy8BDmhwh/qwtGixpphrDNi6DPQGZg/0+EPGiG41TxzfCHioEMDmMUac/k6g0qUz67aKBaOfrIV011FS6kLzh9P9vLZ6yWi8Gpbzvy8EYFOU1lQ5/TZM9yT6snstBZBjoeUCn7+RGGhysxwmN5x2XstksrUB/2CyeLpQDUi/I6QUgG2jrV8q00T2mH4MLpSebpN76JIPDPMG1P1M5HJ/vwXYvtCF7o8NjNPN8FXJki7fNPbJ1djAXUjFF9WYp6TkNqHdkezUbHxYBvgWwJ1x3IJwhvEEcc6F1Lcs8BJg56bo17vHoi1nT7cwkVXMZYY1kb2XmZxm4nGzUFspsV2mUrWUsGfWxSwlVga2DYG6a22jnrIlR052ShKc7FZVtsVBbPquTlaelq+b5JiwUWv70mLOOuho4OwWnSZIE6Ui5S7U14Vs4apHq7VjYdYWo6XltAfh6dpCtsm+wGVxgq1t9kmn7cSsEm1KFOv3mzoM+tmG5szQDtoq1nX/Fcvn4xqKt7p6mxmbGsXnGw9olLQBSFs6X+RstEvF3GC2terUXb6MAS6blIodoPGlyEaWFr0AHBrbPxfZDvqkMjUlbep9zvTJsRcAmce2shJpTWaZGqKbnZ4Y8hE53ct/n7pYwyRzSJxtMScb+W4zTLH3fS1JXBcCBzUZ7AIgjb6VUJin4MnI838MGIXlsod1VNL/Sp8WjY2H1gXAPW4S/P++2mZtbgxy2UGAfYIzVZU+7pql632vRV/d9oitlABwgYp8GcsmkwHfhOo8IB+yqp640UQpABX49C0vW3gN6x8c2rE6Ne/UG6gsiD4AKgULxkxqWziofzEZW2ZmXwPv6nOjYwHQR//Q504CGPoRdxiYvIHJGxjnCfwDHkX3MVHc7z4AAAAASUVORK5CYII="/>
+          <img class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAjtJREFUaEPt2c3LDVEcB/DPQyHKxl6JekQ2FmQhL+EpK++KhX+ALCwsWHgrJQv5C/TEwvuGBVHY2igRsbGTsvSacE/Nrel05t65njsz92Zmd2fmnt/3+/t+53zPmZkw5sfEmOPXEmhawVaBUVZgD85hsmGQb3ESt1I4elnoFVY0DL5b/jVWDkrgz4iA78JINruXAi2BISs4FAU+4Dge4ze24gIWDxlsabsPaqGNeBqNvjkjVDWHGSvwA/MSKGfjC+ZWzKAyArM6tvqGOaNOIODbgGfjaqGA+z22411GIgTdPSypuPth+BlbKI/xZfZjVQ3A2yDLN/kmwrokfyzH/tyJs1lG5O85jEV4kuVGUPAzlmJtx5IHO9Pzpj5qDsVCexOrwp24kyueKvSiM82ex/UeINfhUYfg/IJ7KiOwA3f7EAizVxyAKZxHcLluArtwuw+Bss966P4nLEj8oTIFylioi2c1FuIj3hSweoBtdRIoY6GA5xoO5IAdwnQC6EUcGzUCIfzuR6C+ZzPT1+j8UVyqk0AZCxV1dQ2eR2CDMldGjUBsny6+KTyMwIaXCSFv4qPRh/hqFlYxqFSuVEpgX6I7u6NwC/uCnxHSIgIhwW/UqUBLIOp2q8Cgm/rWQq2Fog4MaqFTiWXxepzJjRtedv2K6pzAlkQ4nc42OflLYekd6lQSZAULyFpODyWJa0FaUOT/IzD2HzjCoipsxJc16Rv88yemhnGXK99+Zi3Xp+ruahWorrflRh57Bf4CJZudMbJbNJwAAAAASUVORK5CYII="/>
+        </div>
+      </section>
+      
+      <section id="about" class="pb-10">
+        <h1 class="text-black text-[4em] ml-24 pt-[4rem]">About<span class="text-[#FF5733]"> ME</span> </h1>
+        <div class="flex mt-20 mb-20">
+        <img src="./me.jpg" class= "ml-20 mr-16 justify-around "/>
+        <p class="ml-10 text-lg justify-evenly text-black">I am <span class="text-[#FF5733] text-xl flex">Debjyoti Bose</span>, I hail from Khardah.
+          I completed my schooling from <span class="text-[#FF5733] text-xl flex">Modern English Academy Barrackpore</span>,
+          Currently I'm pursuing my Btech Degree from <span class="text-[#FF5733] text-xl flex">Techno Main Saltlake</span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. </br>Ipsa explicabo voluptas laborum saepe eaque quibusdam earum animi dolorum quia ab,  in ratione nisi doloremque atque fugiat quos voluptatibus minus veritatis? 
+        </p>
+      </div>
+      </section>
+      <section id="education">
+        <h1 class="pl-4 text-7xl ">Education</h1>
+        <div class="education-item">
+            <h3>Bachelor in Computer Science and Engineering in Artificial Inteligence Machine Learning</h3>
+            <p>Techno Main Salt Lake 2024-2028(Ongoing)</p>
+            <p>Affiliated to MAKAUT</p>
+            <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Machine Learning</p>
+        </div>
+        <div class="education-item">
+            <h3>Modern English Academy</h3>
+            <p>ISC 2022-2024</p>
+            <p></p>
+        </div>
+        <div class="education-item">
+          <h3>Modern English Academy</h3>
+          <p>ICSE 2022</p>
+          <p></p>
+      </div>
+    </section>
+      <section id="project">
+        <div class="project-section">
+          <h2 class="project-title">My Projects</h2>
+          <div class="project-list">
+              <div id="project-item" class="project-item shadow-md hover:shadow-2xl">
+                  <h3>Project One</h3>
+                  <p>Description of project one.</p>
+              </div>
+              <div id="project-item" class="project-item shadow-md hover:shadow-2xl">
+                  <h3>Project Two</h3>
+                  <p>Description of project two.</p>
+              </div>
+              <div id="project-item" class="project-item shadow-md hover:shadow-2xl">
+                  <h3>Project Three</h3>
+                  <p>Description of project three.</p>
+              </div>
+          </div>
+      </div>
+    </section>         
+      </div>
+    </div>
+    </body>
+</html>
